@@ -38,6 +38,93 @@
 	}
 
      
+	 
+	 
+	 
+	*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			perspective:750px;
+		}
+		.nav{
+			width: 460px;
+			height: 40px;
+			margin: 100px auto;
+			background-color: green;
+			animation: go 3s infinite;/*wushuci*/
+		}
+		@keyframes go{
+			0%{transform:rotateY(30deg)}
+			50%{transform:rotateY(-30deg)}
+			100%{transform:rotateY(30deg)}
+		}
+		.nav ul{
+			list-style: none;
+			background-color: green;
+		}
+		.nav ul li{
+			position: relative;
+			float: left;
+			width: 90px;
+			height: 40px;
+			background-color: blue;
+			border: 1px solid #000;
+		}
+		.nav ul.title li h3{
+			width: 90px;
+			height: 40px;
+			color: #fff;
+			text-align: center;
+			line-height: 40px;
+
+		}
+		.nav ul.title li:hover .move{
+			width: 90px;
+
+		}
+		.nav ul.title .move{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			width: 0px;
+			height: 40px;
+			margin: auto;
+			background-color: rgba(5,64,143,.7);
+			transition: .5s;
+		}
+		.nav ul.title > li:hover ul.list{/*--liangge >li*/
+			height: 168px;
+		}
+		.nav ul.title > li:hover:after{
+			width: 90px;
+			transition: .5s;
+		}
+		.nav ul.title li:after{
+			content: "";
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			width: 0px;
+			height: 40px;
+			margin: auto;
+			background-color: rgba(5,64,143,.7);
+			transition: .5s;
+		}
+		.nav ul.list{
+			overflow: hidden;
+			height: 0px;
+			transition:.5s;
+		}
+		.nav ul.list li{
+			background-color: #88885b;
+			color: #fff;
+			text-align: center;
+			line-height: 40px;
+		} 
      
      
  </style>
@@ -49,7 +136,68 @@
     <div id="intro">
         <div id="main-white">
             <section>
-                <h1 class="title">江南小和</h1>
+               
+		    
+<div class="nav">
+		<ul class="title">
+			<li>
+				<h3>首页</h3>
+				<ul class="list">
+					<li>关于我们</li>
+					<li>了解我们</li>
+					<li>我们的团队</li>
+					<li>帮助</li>
+				</ul>
+			</li>
+			<li>
+				<h3>html</h3>
+				<ul class="list">
+					<li>关于我们</li>
+					<li>了解我们</li>
+					<li>我们的团队</li>
+					<li>帮助</li>
+				</ul>
+			</li>
+			<li>
+				<h3>css</h3>
+				<ul class="list">
+					<li>关于我们</li>
+					<li>了解我们</li>
+					<li>我们的团队</li>
+					<li>帮助</li>
+				</ul>
+			</li>
+			<li>
+				<h3>js</h3>
+				<ul class="list">
+					<li>关于我们</li>
+					<li>了解我们</li>
+					<li>我们的团队</li>
+					<li>帮助</li>
+				</ul>
+			</li>
+			<li>
+				<h3>h5</h3>
+				<ul class="list">
+					<li>关于我们</li>
+					<li>了解我们</li>
+					<li>我们的团队</li>
+					<li>帮助</li>
+				</ul>
+			</li>
+		</ul>
+	</div>		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    <!--<h1 class="title">江南小和</h1>-->
                 <ul id="navigation">
                     <li class="transparent-overlay" id="">
                         <a target="_blank" href="http://jiangnanxiaohe.github.io/Resume">
