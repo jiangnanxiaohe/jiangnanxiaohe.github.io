@@ -2,7 +2,7 @@
 <html lang="zh-cmn-Hans"> 
 <head>
     <meta charset="UTF-8">
-    <title>于庆喜的个人主页</title>
+    <title>江南小和的博客</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/icon.ico">
     <link rel="stylesheet" href="css/default.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
@@ -154,6 +154,46 @@
      
  </style>
 <body>
+	
+	<script type="text/javascript">
+_record = 0;
+var myTitle = document.title;
+function titleBlink(){
+  _record++;
+  if(_record==3){//当变量_record累加到3是，将其赋值为1。相当于无限循环。
+    _record=1;
+  }
+  if(_record==1){
+    document.title='【  】'+myTitle;
+  }
+  if(_record==2){
+    document.title='【于庆喜】'+myTitle;
+  }
+  setTimeout("titleBlink()",500);//调节时间，单位毫秒。
+}
+titleBlink();
+</script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 <a href="http://jiangnanxiaohe.github.io/blog/2015/08/22/welcomepic/">
     <canvas id="welcome"></canvas>
 </a>
